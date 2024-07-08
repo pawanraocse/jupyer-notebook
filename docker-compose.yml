@@ -3,7 +3,7 @@ version: "3.8"
 services:
   jupyter:
     container_name: my_jupyter_container
-    image: jupyter/base-notebook:latest
+    build: .
     volumes:
       - ./notebooks:/home/jovyan/work
     ports:
